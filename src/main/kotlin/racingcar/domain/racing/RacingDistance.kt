@@ -2,7 +2,7 @@ package racingcar.domain.racing
 
 import racingcar.domain.engine.Engine
 
-class RacingDistance(
+data class RacingDistance(
     val value: Int = START_DISTANCE
 ) {
     init {

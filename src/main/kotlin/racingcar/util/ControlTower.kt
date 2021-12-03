@@ -18,6 +18,7 @@ object ControlTower {
         racingCarsList: List<RacingCar>,
         winningRecord: Int
     ) = racingCarsList
+        .asSequence()
         .filter {
             it.racingDistance() == winningRecord
         }.map {

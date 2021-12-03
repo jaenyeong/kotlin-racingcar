@@ -18,7 +18,7 @@ class InputConsole : Input {
             carNames.addAll(inputNamesOfCars())
         } while (carNames.isEmpty())
 
-        return carNames
+        return carNames.toList()
     }
 
     private fun inputNamesOfCars(): List<String> {
